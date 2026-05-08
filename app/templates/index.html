@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Banner Section -->
+<section class="banner-section container">
+    <div class="banner">
+        <div class="banner-content">
+            <span class="badge-new">Yangi To'plam</span>
+            <h1>Bahorgi Chegirmalar</h1>
+            <p>Eng so'nggi trenddagi kiyimlar va aksessuarlarga 50% gacha chegirmani qo'lga kiriting.</p>
+            <a href="#" class="btn btn-primary">Xaridni Boshlash</a>
+        </div>
+        <div class="banner-image">
+            <div class="placeholder-img">
+                <i class="ph ph-shopping-bag-open"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section container">
+    <div class="section-header">
+        <h2>Kategoriyalar</h2>
+        <a href="#" class="view-all">Barchasini ko'rish <i class="ph ph-arrow-right"></i></a>
+    </div>
+    <div class="categories-grid">
+        <a href="#" class="category-card">
+            <div class="cat-icon"><i class="ph ph-devices"></i></div>
+            <h3>Texnika</h3>
+        </a>
+        <a href="#" class="category-card">
+            <div class="cat-icon"><i class="ph ph-t-shirt"></i></div>
+            <h3>Kiyimlar</h3>
+        </a>
+        <a href="#" class="category-card">
+            <div class="cat-icon"><i class="ph ph-sneaker"></i></div>
+            <h3>Oyoq kiyimlar</h3>
+        </a>
+        <a href="#" class="category-card">
+            <div class="cat-icon"><i class="ph ph-watch"></i></div>
+            <h3>Aksessuarlar</h3>
+        </a>
+    </div>
+</section>
+
+<!-- Popular Products Section -->
+<section class="products-section container">
+    <div class="section-header">
+        <h2>Eng Mashhur Mahsulotlar</h2>
+    </div>
+    
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+            <button class="like-btn" aria-label="Like"><i class="ph ph-heart"></i></button>
+            <div class="product-img">
+                <i class="ph ph-headphones"></i>
+            </div>
+            <div class="product-info">
+                <div class="product-rating">
+                    <i class="ph-fill ph-star"></i>
+                    <span>4.8</span>
+                    <span class="reviews">(120)</span>
+                </div>
+                <h3 class="product-title">Simsiz Quloqchin Pro Max</h3>
+                <div class="product-bottom">
+                    <span class="product-price">1 200 000 UZS</span>
+                    <button class="add-to-cart" aria-label="Add to cart"><i class="ph ph-plus"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+            <button class="like-btn" aria-label="Like"><i class="ph ph-heart"></i></button>
+            <div class="product-img">
+                <i class="ph ph-watch"></i>
+            </div>
+            <div class="product-info">
+                <div class="product-rating">
+                    <i class="ph-fill ph-star"></i>
+                    <span>4.9</span>
+                    <span class="reviews">(85)</span>
+                </div>
+                <h3 class="product-title">Smart Soat V4</h3>
+                <div class="product-bottom">
+                    <span class="product-price">850 000 UZS</span>
+                    <button class="add-to-cart" aria-label="Add to cart"><i class="ph ph-plus"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+            <button class="like-btn" aria-label="Like"><i class="ph ph-heart"></i></button>
+            <div class="product-img">
+                <i class="ph ph-sneaker"></i>
+            </div>
+            <div class="product-info">
+                <div class="product-rating">
+                    <i class="ph-fill ph-star"></i>
+                    <span>4.6</span>
+                    <span class="reviews">(50)</span>
+                </div>
+                <h3 class="product-title">Sport Krossovkalari</h3>
+                <div class="product-bottom">
+                    <span class="product-price">450 000 UZS</span>
+                    <button class="add-to-cart" aria-label="Add to cart"><i class="ph ph-plus"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+            <button class="like-btn" aria-label="Like"><i class="ph ph-heart"></i></button>
+            <div class="product-img">
+                <i class="ph ph-backpack"></i>
+            </div>
+            <div class="product-info">
+                <div class="product-rating">
+                    <i class="ph-fill ph-star"></i>
+                    <span>4.7</span>
+                    <span class="reviews">(200)</span>
+                </div>
+                <h3 class="product-title">Sayohat Sumkasi 30L</h3>
+                <div class="product-bottom">
+                    <span class="product-price">320 000 UZS</span>
+                    <button class="add-to-cart" aria-label="Add to cart"><i class="ph ph-plus"></i></button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock %}

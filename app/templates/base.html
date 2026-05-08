@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mini-Shop{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Phosphor Icons for modern, clean icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="{{ url_for('shop.index') }}">MINI<span>SHOP</span></a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Qidirish...">
+                <button type="button"><i class="ph ph-magnifying-glass"></i></button>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#">Kategoriyalar</a>
+                <a href="#">Chegirmalar</a>
+                <a href="#">Biz haqimizda</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Dark Mode Toggle">
+                    <i class="ph ph-moon"></i>
+                </button>
+                <a href="#" class="action-icon" aria-label="Profile"><i class="ph ph-user"></i></a>
+                <a href="#" class="action-icon cart-icon" aria-label="Cart">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3>MINISHOP</h3>
+                <p>Minimalistik va zamonaviy online do'kon.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Havolalar</h4>
+                <a href="#">Bosh sahifa</a>
+                <a href="#">Kategoriyalar</a>
+                <a href="#">Savat</a>
+            </div>
+            <div class="footer-col">
+                <h4>Aloqa</h4>
+                <a href="#">+998 90 123 45 67</a>
+                <a href="#">info@minishop.uz</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MiniShop. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
