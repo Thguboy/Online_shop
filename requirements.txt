@@ -6,6 +6,5 @@ Flask-Login==0.6.3
 python-dotenv==1.0.0
 aiogram==3.3.0
 sqlalchemy==2.0.23
-pydantic==2.5.3
-pydantic-core==2.14.6
-python-3.12.2
+pydantic>=2.10.0
+pydantic-core>=2.27.0
